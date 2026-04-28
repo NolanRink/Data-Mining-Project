@@ -1,0 +1,256 @@
+FINAL PROJECT AND PROPOSAL REQUIREMENTS
+Data Mining / Knowledge Discovery Course
+
+============================================================
+FINAL PROJECT OVERVIEW
+============================================================
+
+The final project requires students to apply data mining and knowledge discovery
+techniques to analyze real-world environmental datasets.
+
+The goal is to explore meaningful patterns in ecological or environmental data
+and generate insights related to landscape health and conservation science.
+
+Projects may be completed individually or in teams of two students.
+
+Students will complete the full data mining workflow, including:
+
+1. Defining a research question
+2. Acquiring and preprocessing data
+3. Conducting exploratory data analysis
+4. Applying data mining or machine learning techniques
+5. Interpreting and visualizing results
+
+============================================================
+FINAL PROJECT DELIVERABLES
+============================================================
+
+1. Written Report (5-6 pages)
+
+   The report should include:
+
+   - Problem definition
+   - Dataset description
+   - Data preprocessing
+   - Methods used
+   - Results, interpretation, and visualizations
+   - Comparison of your results with existing or previously reported findings
+     related to the dataset
+
+2. Code Submission
+
+   Submit all scripts used for:
+
+   - Data preprocessing
+   - Analysis or modeling
+   - Visualization
+
+3. Project Presentation (~15 minutes)
+
+   Each team will present:
+
+   - Project goals
+   - Dataset used
+   - Analysis approach
+   - Key results
+   - Comparison with existing or previously reported results
+   - Conclusions
+
+============================================================
+FINAL PROJECT REQUIREMENTS
+============================================================
+
+All projects must satisfy the following requirements:
+
+- Use publicly available datasets
+- Dataset size should be medium to large
+- Focus on structured/tabular datasets
+- Image datasets are not allowed
+- Analysis must run on a standard desktop or laptop
+- No GPU is required
+- Apply multiple data mining or machine learning techniques
+- Include comparison of results with existing or previously reported findings
+  when available
+
+============================================================
+SELECTED TOPIC
+============================================================
+
+------------------------------------------------------------
+Selected Topic: Water Quality Data Analysis
+------------------------------------------------------------
+
+Goal:
+Analyze environmental monitoring data to understand factors affecting water
+quality.
+
+Dataset:
+https://www.waterqualitydata.us/
+
+Example questions:
+
+- What environmental variables are associated with water quality changes?
+- Are there spatial or temporal patterns in water quality indicators?
+- Can water quality trends be identified across monitoring locations?
+
+
+============================================================
+HOMEWORK ASSIGNMENT: PROJECT PROPOSAL
+============================================================
+
+To prepare for the final project, each student or team must submit a project
+proposal describing their planned study.
+
+The proposal ensures that:
+
+- The dataset is appropriate
+- The project scope is feasible
+- The research question is well defined
+
+------------------------------------------------------------
+Proposal Requirements
+------------------------------------------------------------
+
+Length:
+1-2 pages
+
+Submission format:
+Submit the proposal as a PDF file on Canvas.
+
+Your proposal should include the following sections:
+
+1. Project Title
+
+   Provide a clear and descriptive title.
+
+2. Team Members
+
+   List all team members.
+
+3. Selected Project Topic
+
+   Indicate which project option you are selecting.
+
+4. Problem Statement
+
+   Describe the research question or problem your project will investigate.
+   Explain:
+
+   - What you want to study
+   - Why it is interesting or important
+
+5. Dataset Description
+
+   Provide information about the dataset you will use, including:
+
+   - Dataset name
+   - Source URL
+   - Approximate dataset size
+   - Key variables or attributes
+
+6. Planned Analysis Approach
+
+   Briefly describe how you plan to analyze the dataset.
+
+7. Related Work or Existing Results
+
+   Identify any existing research, reports, or known findings related to your
+   dataset. You will later compare your results with these findings in the
+   final report.
+
+8. Project Timeline
+
+   Provide a short timeline showing how you plan to complete the project.
+
+============================================================
+PROPOSAL GRADING RUBRIC: 10 POINTS
+============================================================
+
+Criterion 1: Project Topic & Problem Statement - 3 points
+
+Excellent:
+Research question is clearly defined, well motivated, and relevant to the
+project topic.
+
+Good:
+Research question is clear but motivation or scope could be improved.
+
+Needs Improvement:
+Research question is unclear, vague, or poorly defined.
+
+------------------------------------------------------------
+
+Criterion 2: Dataset Identification & Description - 3 points
+
+Excellent:
+Dataset is clearly identified, publicly available, appropriate for the project,
+and key variables and approximate size are described.
+
+Good:
+Dataset is identified but description lacks some details, such as variables or
+size.
+
+Needs Improvement:
+Dataset is unclear, inappropriate, or insufficiently described.
+
+------------------------------------------------------------
+
+Criterion 3: Planned Analysis Approach - 2 points
+
+Excellent:
+Proposal outlines a reasonable and feasible analysis plan that clearly connects
+to the research question.
+
+Good:
+Analysis plan is generally reasonable but somewhat vague or incomplete.
+
+Needs Improvement:
+Analysis plan is unclear, unrealistic, or missing.
+
+------------------------------------------------------------
+
+Criterion 4: Related Work / Existing Results - 1 point
+
+Excellent:
+Proposal identifies relevant prior studies, reports, or known findings related
+to the dataset or topic.
+
+Good:
+Proposal briefly mentions related work but lacks detail or relevance.
+
+Needs Improvement:
+No related work or existing results are identified.
+
+------------------------------------------------------------
+
+Criterion 5: Organization & Completeness - 1 point
+
+Excellent:
+Proposal is clearly written, well organized, and follows the required structure
+within the 1-2 page limit.
+
+Good:
+Proposal is generally organized but has minor clarity or formatting issues.
+
+Needs Improvement:
+Proposal is poorly organized, incomplete, or exceeds the page limit.
+
+============================================================
+QUICK CHECKLIST
+============================================================
+
+Before submitting the proposal, make sure it includes:
+
+[ ] Clear project title
+[ ] Team member names
+[ ] Selected topic option
+[ ] Well-defined research question
+[ ] Explanation of why the problem matters
+[ ] Dataset name and URL
+[ ] Approximate dataset size
+[ ] Key variables or attributes
+[ ] Planned analysis methods
+[ ] Related work or existing findings
+[ ] Project timeline
+[ ] 1-2 page length
+[ ] PDF format for Canvas submission
