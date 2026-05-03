@@ -1,10 +1,14 @@
-# Data files
-*.csv
+# Large local WQP data files
+data/*.csv
+data/*.zip
+!data/*.zip
+data/processed/*.csv
+data/processed/*.parquet
+data/processed/*.feather
+
+# Spreadsheet exports are not used by the current workflow
 *.xlsx
 *.xls
-*.json
-*.parquet
-*.feather
 
 # Python
 __pycache__/
@@ -44,6 +48,4 @@ Thumbs.db
 *.tmp
 *.temp
 
-# Visualizations
-*.png
-*.jpg
+# Generated deliverables under outputs/ are intentionally trackable for final submission.

@@ -1,0 +1,20 @@
+check,value,notes
+raw_row_count,3148368,Parsed rows in raw resultphyschem.csv.
+processed_numeric_long_row_count,3148368,Rows written to row-preserving processed long CSV.
+processed_row_count_difference,0,Should be 0 for the row-preserving output.
+rows_with_parsed_numeric_values,3135533,Rows with numeric ResultMeasureValue after parsing.
+non_numeric_or_missing_result_rows,12835,Rows with missing or non-numeric ResultMeasureValue.
+raw_duplicate_ResultIdentifier_rows,0,Duplicate ResultIdentifier rows in raw data.
+processed_duplicate_ResultIdentifier_rows,0,Duplicate ResultIdentifier rows in processed long data.
+processed_duplicate_constructed_row_key_rows,0,Constructed source_row_key is based on raw source row order.
+processed_rows_removed,0,None; row-preserving selected-column output.
+pH_in_candidate_metadata,True,Whether pH is selected as a candidate characteristic.
+pH_in_site_matrix,True,Whether pH appears as a site-characteristic matrix column.
+site_matrix_rows,18339,Number of site rows in matrix.
+site_matrix_columns,21,Includes MonitoringLocationIdentifier when present.
+candidate_variable_count,48,Number of candidate variables selected from EDA.
+active_year_min,2021,Minimum parsed activity year.
+active_year_max,2023,Maximum parsed activity year.
+number_of_active_years,3,Count of active years in current export.
+expected_2021_2023_years_present,True,Missing expected years: [].
+unexpected_activity_years,,Unexpected years outside the verified 2021-2023 baseline.
