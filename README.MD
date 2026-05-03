@@ -27,7 +27,6 @@ The active scripts read the extracted raw CSV files:
 - `data/resultphyschem.csv`
 - `data/station.csv`
 
-Extracted raw CSVs and regenerated processed files should not be committed unless the instructor specifically requires them. They can be recreated from the raw ZIP files.
 
 Verified current dataset profile:
 
