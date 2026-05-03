@@ -147,30 +147,6 @@ Do not commit extracted raw CSV files directly. See:
 - `reports/git_lfs_data_submission_guide.md`
 - `reports/submission_package_recommendation.md`
 
-## Recommended GitHub Files
-
-Track:
-
-- `.gitignore`
-- `.gitattributes`
-- `README.MD`
-- `AGENTS.md`
-- `notebooks/florida_wqp_eda_workflow.ipynb`
-- `notebooks/florida_wqp_modeling_workflow.ipynb`
-- `reports/final_ieee_project_report.md`
-- `reports/submission_package_recommendation.md`
-- key report files under `reports/`
-- lightweight result CSVs and figures needed to verify the final results
-- raw ZIP files through Git LFS
-
-Avoid tracking:
-
-- extracted raw CSV files
-- large regenerated processed files unless required by the instructor
-- cache folders
-- `.ipynb_checkpoints/`
-- `__pycache__/`
-- stale old 2014 artifacts
 
 ## Limitations
 
