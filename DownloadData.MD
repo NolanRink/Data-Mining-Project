@@ -1,103 +1,54 @@
-# Florida WQP Data Mining Project
+# Data Download Selections
 
-This repository analyzes Florida Water Quality Portal (WQP) water-quality data for a data mining class project. The project is currently being restarted from the corrected 2021-2023 Florida WQP export.
+https://www.waterqualitydata.us/
 
-## Dataset
+Country:
+United States
 
-Data source: Water Quality Portal, https://www.waterqualitydata.us/
+State:
+Florida
 
-Current verified local input files:
+Providers:
+NWIS
+STORET
 
-- `data/resultphyschem.csv`
-- `data/station.csv`
+Date Range:
+Start date: 01-01-2021
+End date:   12-31-2023
 
-Verified baseline:
+Site Types:
+Stream (NWIS, STEWARDS, STORET)
+Lake, Reservoir, Impoundment (NWIS, STORET)
+Spring (NWIS, STORET)
+Estuary (NWIS, STORET)
+Well (NWIS, STORET)
+Wetland (NWIS, STORET)
 
-- `data/resultphyschem.csv`: 3,148,368 result rows
-- `data/station.csv`: 19,948 station rows
-- `ActivityStartDate`: 2021-01-01 through 2023-12-31
-- Years present: 2021, 2022, 2023
-- `ResultIdentifier` is unique
-- All result site IDs match `station.csv`
+Sample Media:
+Water (NWIS, STEWARDS, STORET)
 
-The previous 2014-only dataset was downloaded incorrectly. Old reports, figures, modeling results, and the old presentation are obsolete and should not be cited as current evidence.
+Characteristic Groups:
+Physical (NWIS, STEWARDS, STORET)
+Nutrient (NWIS, STEWARDS, STORET)
+Inorganics, Major, Non-metals (NWIS, STEWARDS, STORET)
+Inorganics, Major, Metals (NWIS, STEWARDS, STORET)
+Inorganics, Minor, Metals (NWIS, STEWARDS, STORET)
+Microbiological (NWIS, STORET)
+Biological, Algae, Cyanobacteria (NWIS, STORET)
+Biological, Photosynthetic Pigments (NWIS, STORET)
+Cyanotoxins, Phytotoxins (NWIS, STORET)
 
-## Current Workflow
+Data Profile:
+Sample Results (physical/chemical metadata)
 
-Run EDA first, then the current 2021-2023 modeling script:
+File Format:
+Comma-Separated
 
-```powershell
-python -m py_compile scripts\florida_wqp_eda.py
-python scripts\florida_wqp_eda.py
-python -m py_compile scripts\florida_wqp_modeling.py
-python scripts\florida_wqp_modeling.py
-```
 
-The EDA script writes fresh outputs to:
 
-- `outputs/eda/`
-- `outputs/figures/`
-- `data/processed/`
-- `reports/wqp_data_understanding_summary.md`
-- `reports/wqp_data_mining_plan.md`
 
-The modeling script now runs the current 2021-2023 modeling workflow:
+Download Query:
+https://www.waterqualitydata.us/#countrycode=US&statecode=US%3A12&siteType=Stream&siteType=Lake%2C%20Reservoir%2C%20Impoundment&siteType=Spring&siteType=Estuary&siteType=Well&siteType=Wetland&sampleMedia=Water&characteristicType=Physical&characteristicType=Nutrient&characteristicType=Inorganics%2C%20Major%2C%20Metals&characteristicType=Inorganics%2C%20Major%2C%20Non-metals&characteristicType=Inorganics%2C%20Minor%2C%20Metals&characteristicType=Microbiological&characteristicType=Biological%2C%20Algae%2C%20Phytoplankton%2C%20Cyanobacteria%2C%20Periphyton&characteristicType=Biological%2C%20Algae%2C%20Phytoplankton%2C%20Photosynthetic%20Pigments&characteristicType=Cyanotoxins%2C%20Phytotoxins&startDateLo=01-01-2021&startDateHi=12-31-2023&mimeType=csv&dataProfile=resultPhysChem&providers=NWIS&providers=STORET
 
-- modeling input and selected-variable audits
-- site-level Spearman correlation
-- PCA
-- quality-controlled clustering
-- supervised target feasibility screening
-- temporal modeling readiness screening
-- low-DO supervised readiness checks
-- first leakage-controlled low-DO supervised classification pass
-
-The supervised pass uses a project-defined low-DO target, grouped-by-site splitting, and leakage exclusions for dissolved oxygen, dissolved oxygen saturation, and ID fields. Results are exploratory and should not be described as pollution prediction, regulatory assessment, causal inference, or long-term trend modeling.
-
-## Current Reports
-
-Reset and planning reports:
-
-- `reports/wqp_new_data_reset_review.md`
-- `reports/wqp_new_data_refactor_plan.md`
-- `reports/wqp_cleanup_old_2014_outputs_plan.md`
-- `reports/wqp_2021_2023_eda_reset_implementation_report.md`
-
-Fresh EDA reports, after running the EDA script:
-
-- `reports/wqp_data_understanding_summary.md`
-- `reports/wqp_data_mining_plan.md`
-
-Current modeling and final communication reports:
-
-- `reports/wqp_2021_2023_modeling_results.md`
-- `reports/wqp_2021_2023_supervised_modeling_report.md`
-- `reports/wqp_2021_2023_supervised_modeling_review.md`
-- `reports/wqp_2021_2023_final_report_outline.md`
-- `reports/wqp_2021_2023_final_presentation_plan.md`
-
-Old 2014-only archive folders have been deleted from the active repository. They are not current evidence and should not be cited.
-
-## Requirements
-
-Use Python with:
-
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
-
-No new dependencies are required for the EDA reset.
-
-## Key Limitations
-
-- WQP sampling is observational and uneven by provider, site, site type, location, season, and characteristic.
-- Three years of data can support data understanding, seasonal summaries, and possible inter-year comparisons, but trend claims require site-characteristic continuity checks.
-- Raw values should not be compared across characteristics without unit review and standardization.
-- Non-detects, censored values, missing units, and suspicious numeric values need explicit QA handling.
-- Supervised low-DO modeling is exploratory and uses a project-defined threshold with grouped-by-site validation.
-
-## Cleanup Status
-
-Old 2014 wrong-data archives and legacy file folders have been removed from the active repository. Use `reports/wqp_delete_2014_old_files_report.md` for the cleanup record.
+Site Data Download:
+https://www.waterqualitydata.us/#countrycode=US&statecode=US%3A12&siteType=Stream&siteType=Lake%2C%20Reservoir%2C%20Impoundment&siteType=Spring&siteType=Estuary&siteType=Well&siteType=Wetland&sampleMedia=Water&characteristicType=Physical&characteristicType=Nutrient&characteristicType=Inorganics%2C%20Major%2C%20Metals&characteristicType=Inorganics%2C%20Major%2C%20Non-metals&characteristicType=Inorganics%2C%20Minor%2C%20Metals&characteristicType=Microbiological&characteristicType=Biological%2C%20Algae%2C%20Phytoplankton%2C%20Cyanobacteria%2C%20Periphyton&characteristicType=Biological%2C%20Algae%2C%20Phytoplankton%2C%20Photosynthetic%20Pigments&characteristicType=Cyanotoxins%2C%20Phytotoxins&startDateLo=01-01-2021&startDateHi=12-31-2023&mimeType=csv&providers=NWIS&providers=STORET
