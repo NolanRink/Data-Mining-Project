@@ -37,7 +37,6 @@ Verified current dataset profile:
 - Unique characteristics: 168
 - Duplicate `ResultIdentifier` rows: 0
 
-The old 2014-only dataset was an incorrect earlier download and should not be used as current project evidence.
 
 ## Methods
 
